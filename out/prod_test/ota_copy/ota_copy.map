@@ -258,6 +258,8 @@ utils/heap/built-in.a(pool_api.o)
                               (--whole-archive)
 tests/programmer_ext/ota_copy/built-in.a(ota_copy.o)
                               (--whole-archive)
+tests/programmer_ext/ota_copy/built-in.a(libprogrammer_ext_compressed_617f8e5-dirty.o)
+                              (--whole-archive)
 utils/libc/built-in.a(libc_rom.o)
                               (--whole-archive)
 utils/libc/built-in.a(libc_rom_mem.o)
@@ -6655,6 +6657,14 @@ Discarded input sections
                 0x0000000000000000      0x164 tests/programmer_ext/ota_copy/built-in.a(ota_copy.o)
  .bss.dataBufferForBurning
                 0x0000000000000000     0x1000 tests/programmer_ext/ota_copy/built-in.a(ota_copy.o)
+ .text          0x0000000000000000        0x0 tests/programmer_ext/ota_copy/built-in.a(libprogrammer_ext_compressed_617f8e5-dirty.o)
+ .data          0x0000000000000000        0x0 tests/programmer_ext/ota_copy/built-in.a(libprogrammer_ext_compressed_617f8e5-dirty.o)
+ .bss           0x0000000000000000        0x0 tests/programmer_ext/ota_copy/built-in.a(libprogrammer_ext_compressed_617f8e5-dirty.o)
+ .debug_line    0x0000000000000000        0x0 tests/programmer_ext/ota_copy/built-in.a(libprogrammer_ext_compressed_617f8e5-dirty.o)
+ .debug_str     0x0000000000000000      0x1e7 tests/programmer_ext/ota_copy/built-in.a(libprogrammer_ext_compressed_617f8e5-dirty.o)
+ .comment       0x0000000000000000       0x4a tests/programmer_ext/ota_copy/built-in.a(libprogrammer_ext_compressed_617f8e5-dirty.o)
+ .ARM.attributes
+                0x0000000000000000       0x3a tests/programmer_ext/ota_copy/built-in.a(libprogrammer_ext_compressed_617f8e5-dirty.o)
  .text          0x0000000000000000        0x0 utils/libc/built-in.a(libc_rom.o)
  .data          0x0000000000000000        0x0 utils/libc/built-in.a(libc_rom.o)
  .bss           0x0000000000000000        0x0 utils/libc/built-in.a(libc_rom.o)
@@ -8465,25 +8475,25 @@ END GROUP
  *(.system_info_list)
                 0x000000002c010440                . = ALIGN (0x4)
 
-.build_info     0x000000002c010440       0x2c
+.build_info     0x000000002c010440       0x38
  *(.build_info)
- .build_info    0x000000002c010440       0x29 build_info.o
+ .build_info    0x000000002c010440       0x36 build_info.o
                 0x000000002c010440                sys_build_info
-                0x000000002c01046c                . = ALIGN (0x4)
- *fill*         0x000000002c010469        0x3 00000000
+                0x000000002c010478                . = ALIGN (0x4)
+ *fill*         0x000000002c010476        0x2 00000000
 
-.rel.dyn        0x000000002c01046c        0x0
- .rel.iplt      0x000000002c01046c        0x0 tests/programmer/built-in.a(usb_cdc.o)
+.rel.dyn        0x000000002c010478        0x0
+ .rel.iplt      0x000000002c010478        0x0 tests/programmer/built-in.a(usb_cdc.o)
 
 .code_start_addr
-                0x000000002c01046c       0x10
-                0x000000002c01046c                __app_entry_address__ = .
-                0x000000002c01046c        0x4 LONG 0x2c018000
-                0x000000002c010470                __download_uart_bandrate__ = .
-                0x000000002c010470        0x4 LONG 0xe1000
-                0x000000002c010474        0x4 LONG 0xbe57341d
-                0x000000002c010478        0x4 LONG 0x2c000000 ABSOLUTE (__flash_start)
-                0x000000002c01047c                __flash_end = .
+                0x000000002c010478       0x10
+                0x000000002c010478                __app_entry_address__ = .
+                0x000000002c010478        0x4 LONG 0x2c018000
+                0x000000002c01047c                __download_uart_bandrate__ = .
+                0x000000002c01047c        0x4 LONG 0xe1000
+                0x000000002c010480        0x4 LONG 0xbe57341d
+                0x000000002c010484        0x4 LONG 0x2c000000 ABSOLUTE (__flash_start)
+                0x000000002c010488                __flash_end = .
 
 .bss            0x000000002406d9f4    0x21ed4 load address 0x000000002c010440
                 0x000000002406d9f4                . = ALIGN (0x4)

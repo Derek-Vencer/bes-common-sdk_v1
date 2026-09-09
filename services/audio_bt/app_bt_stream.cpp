@@ -231,7 +231,7 @@ void app_bt_stream_set_ext_sco_data_path(void(*playback_cb)(uint8_t *buf, uint32
     app_bt_stream_ext_sco_capture  = capture_cb;
 }
 
-// #define A2DP_STREAM_AUDIO_DUMP      (16)
+#define A2DP_STREAM_AUDIO_DUMP      (16)
 
 #if defined(A2DP_STREAM_AUDIO_DUMP)
 static uint32_t g_a2dp_pcm_dump_frame_len = 0;
