@@ -1,0 +1,71 @@
+MAKE START: 2026-09-09 09:07:29.828412761
+make[1]: Entering directory '/mnt/c/Project/bes-common-sdk_v1/out/best1306p'
+----------common.mk in flash---------------------
+FLASH_REMAP: 0
+NEW_IMAGE_FLASH_OFFSET: 0x260000
+OTA_CODE_OFFSET: 0x18000
+-------------------------------
+-------------------------------
+REVISION_INFO: :best1306p
+-------------------------------
+  AR      utils/rom_utils/best1306p_librom_utils_ble_gfps_anc.a
+  AR      utils/rom_utils/built-in.a
+  AR      services/gfps/libgfps_crypto.a
+  C++     services/ota/bes_ota/src/ota_config.o
+  C++     services/ota/bes_ota/src/ota_control.o
+  C++     services/tota_v2/app_tota.o
+  AR      services/gfps/built-in.a
+  AR      platform/cmsis/DSP_Lib/cmsis_dsp_lib.a
+  LD      platform/cmsis/DSP_Lib/cmsis_dsp.o
+  AR      platform/cmsis/DSP_Lib/built-in.a
+  AR      platform/cmsis/built-in.a
+  AR      platform/built-in.a
+  AR      services/ota/bes_ota/lib_ota_ibrt_ble_gfps_anc.a
+  AR      services/ota/bes_ota/built-in.a
+  AR      services/ota/built-in.a
+  AR      services/tota_v2/libtota_ble_gfps_anc.a
+  AR      services/tota_v2/built-in.a
+  AR      services/built-in.a
+  CC      build_info.o
+  LINK    best1306p.elf
+Memory region         Used Size  Region Size  %age Used
+             ROM:          0 GB        64 KB      0.00%
+           FLASH:     1598116 B      4000 KB     39.02%
+        FLASH_NC:       4000 KB      4000 KB    100.00%
+          FLASHX:     1100184 B      4000 KB     26.86%
+             RAM:      259584 B       384 KB     66.02%
+            RAMX:       32192 B       384 KB      8.19%
+           FRAMX:        5664 B        32 KB     17.29%
+           RAMCP:        7696 B       256 KB      2.94%
+          RAMCPX:       53568 B        96 KB     54.49%
+  GENBIN  _best1306p.bin_org
+  MODBIN  best1306p.bin
+make[1]: Leaving directory '/mnt/c/Project/bes-common-sdk_v1/out/best1306p'
+MAKE END: 2026-09-09 09:09:15.374110439
+MAKE TIME: 105.55 seconds
+MAKE START: 2026-09-09 09:09:15.400294557
+make[1]: Entering directory '/mnt/c/Project/bes-common-sdk_v1/out/prod_test/ota_copy'
+----------common.mk in flash---------------------
+FLASH_REMAP: 
+NEW_IMAGE_FLASH_OFFSET: 
+OTA_CODE_OFFSET: 0x18000
+-------------------------------
+-------------------------------
+REVISION_INFO: :prod_test/ota_copy
+-------------------------------
+  AR      tests/programmer_ext/ota_copy/libprogrammer_ext_compressed.a
+  AR      tests/programmer_ext/ota_copy/built-in.a
+  CC      build_info.o
+  LINK    ota_copy.elf
+Memory region         Used Size  Region Size  %age Used
+             ROM:          0 GB        64 KB      0.00%
+           FLASH:       66684 B         4 MB      1.59%
+        FLASH_NC:          0 GB         4 MB      0.00%
+          FLASHX:       11336 B         4 MB      0.27%
+             RAM:      325896 B       512 KB     62.16%
+            RAMX:      179008 B       512 KB     34.14%
+  GENBIN  ota_copy.bin
+make[1]: Leaving directory '/mnt/c/Project/bes-common-sdk_v1/out/prod_test/ota_copy'
+MAKE END: 2026-09-09 09:09:41.679789919
+MAKE TIME: 26.28 seconds
+BES_OTA=1 OTA_BIN_COMPRESSED=1 SPEECH_TX_1MIC_NS=1 SPEECH_TX_AEC2FLOAT=1 BLE=1 GFPS_ENABLE=1 ANC_ENABLE=1 BES_LIB_DIR=lib/bes/best1306p/PRO_0015 POWER_ON_ENTER_TWS_PAIRING_ENABLED=1

@@ -1,0 +1,2 @@
+
+cmd_services/../bthost/adapter/built-in.a := ( /usr/bin/printf 'create services/../bthost/adapter/built-in.a\n addmod services/../bthost/adapter/src/adapter_service.o,services/../bthost/adapter/src/bluetooth_nv_mgr.o,services/../bthost/adapter/src/bt_api_export.o,services/../bthost/adapter/src/ble_api_export.o\n addlib services/../bthost/adapter/test/built-in.a\nsave\nend' | arm-none-eabi-ar -M )

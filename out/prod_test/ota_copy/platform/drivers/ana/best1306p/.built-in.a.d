@@ -1,0 +1,2 @@
+
+cmd_tests/programmer/../../platform/drivers/ana/best1306p/built-in.a := ( /usr/bin/printf 'create tests/programmer/../../platform/drivers/ana/best1306p/built-in.a\n addmod tests/programmer/../../platform/drivers/ana/best1306p/analog_best1306p.o,tests/programmer/../../platform/drivers/ana/best1306p/charger_best1306p.o,tests/programmer/../../platform/drivers/ana/best1306p/pmu_best1306p.o,tests/programmer/../../platform/drivers/ana/best1306p/rf_xtal_best1306p.o\n save\nend' | arm-none-eabi-ar -M )

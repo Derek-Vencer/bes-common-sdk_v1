@@ -1,0 +1,31 @@
+config/prod_test/ota_copy/tgt_hardware.o: \
+ ../../../config/prod_test/ota_copy/tgt_hardware.c \
+ ../../../config/prod_test/ota_copy/tgt_hardware.h \
+ ../../../platform/hal/hal_iomux.h ../../../platform/hal/plat_types.h \
+ ../../../utils/libc/inc/stddef.h ../../../utils/libc/inc/stdint.h \
+ ../../../utils/libc/inc/stdbool.h ../../../platform/hal/plat_addr_map.h \
+ ../../../platform/hal/best1306p/plat_addr_map_best1306p.h \
+ ../../../platform/hal/best1306p/hal_iomux_best1306p.h \
+ ../../../platform/hal/plat_types.h ../../../platform/hal/hal_gpio.h \
+ ../../../platform/hal/hal_iomux.h ../../../platform/hal/hal_key.h \
+ ../../../platform/hal/hal_gpio.h ../../../platform/hal/hal_gpadc.h \
+ ../../../platform/hal/hal_aud.h ../../../platform/hal/hal_location.h
+../../../config/prod_test/ota_copy/tgt_hardware.h:
+../../../platform/hal/hal_iomux.h:
+../../../platform/hal/plat_types.h:
+../../../utils/libc/inc/stddef.h:
+../../../utils/libc/inc/stdint.h:
+../../../utils/libc/inc/stdbool.h:
+../../../platform/hal/plat_addr_map.h:
+../../../platform/hal/best1306p/plat_addr_map_best1306p.h:
+../../../platform/hal/best1306p/hal_iomux_best1306p.h:
+../../../platform/hal/plat_types.h:
+../../../platform/hal/hal_gpio.h:
+../../../platform/hal/hal_iomux.h:
+../../../platform/hal/hal_key.h:
+../../../platform/hal/hal_gpio.h:
+../../../platform/hal/hal_gpadc.h:
+../../../platform/hal/hal_aud.h:
+../../../platform/hal/hal_location.h:
+
+cmd_config/prod_test/ota_copy/tgt_hardware.o := arm-none-eabi-gcc -MD -MP -MF config/prod_test/ota_copy/.tgt_hardware.o.d -MT config/prod_test/ota_copy/tgt_hardware.o  -I../../../config -I../../../utils/lzma/ -I../../../utils/heap/ -I../../../platform/cmsis/inc -I../../../platform/hal -DPROGRAMMER_INFLASH -DOTA_ENABLE -DOTA_ENABLE -DDOWNLOAD_UART_BANDRATE=921600 -DOTA_CODE_OFFSET=0x18000 -DAPP_ENTRY_ADDRESS=0x2c000000+0x18000 -DCHIP_BEST1306P -DCHIP_HAS_USB -DCP_IN_SAME_EE -I../../../utils/libc/inc -ffreestanding -nostdinc -DNOSTD -DDEBUG -U__INT32_TYPE__ -D__INT32_TYPE__=int -U__UINT32_TYPE__ -DPROGRAMMER -DLIBC_ROM -DBT_SERVICE_ENABLE -DIBRT_UI -DBT_SVC_FW_PRODUCT_EARBUDS -DBT_SVC_MODULE_BT_ENABLED -DBT_SVC_MODULE_TWS_ENABLED -DBT_SVC_MODULE_IBRT_ENABLED -DBT_HFP_SUPPORT -DBT_A2DP_SUPPORT -DBT_AVRCP_SUPPORT -DBT_SPP_SUPPORT -D__WATCHER_DOG_RESET__ -DOTA_BIN_COMPRESSED -DAUDIO_OUTPUT_VOLUME_DEFAULT=10 -DINT_LOCK_EXCEPTION -DTRACE_MAXIMUM_LOG_LEN=120 -DFLASH_SIZE=0x400000 -DPSRAM_SIZE=0x400000 -DSIMULTANEOUS_AWAKEN -I../../../config/prod_test/ota_copy -I../../../config/_default_cfg_src_ -I../../../include -DUNALIGNED_ACCESS -mthumb -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -Werror -DAPP_UI_THREAD_SIZE=2048 -DTRACE_CODE_IN_RAM -DTRACE_CP_CPU_OUTPUT -fno-common -fmessage-length=0 -Wall -fno-exceptions -ffunction-sections -fdata-sections -fomit-frame-pointer -fsigned-char -fno-aggressive-loop-optimizations -fno-isolate-erroneous-paths-dereference -fsingle-precision-constant -Wdouble-promotion -Wfloat-conversion -g -O2 -DDEBUG_IRQ_HUNG -Werror=date-time -Wlogical-op -Wimplicit-fallthrough -Wno-trigraphs -fno-strict-aliasing -fno-tree-loop-distribute-patterns -I../../../platform/hal -I../../../platform/drivers/ana -I../../../platform/drivers/usb/usb_dev/inc -I../../../services/nv_section/aud_section -I../../../services/nv_section/include -I../../../multimedia/inc -I../../../multimedia/inc/speech/inc -I../../../multimedia/inc/audio/process/filters/include -I../../../multimedia/inc/audio/process/drc/include -I../../../multimedia/inc/audio/process/limiter/include -I../../../multimedia/inc/audio/process/reverb/include -I../../../utils/heap -I../../../multimedia/inc/audio/process/bass_enhancer/include -I../../../multimedia/inc/audio/process/dynamic_boost/include -I../../../multimedia/inc/audio/process/dynamic_eq/include -I../../../multimedia/inc/audio/process/virtual_surround_process/include -I../../../multimedia/inc/audio/process/adj_mc/inc -I../../../multimedia/inc/algorithm/fft/include -I../../../multimedia/inc/audio/process/bass_enhancer/include -I../../../multimedia/inc/audio/process/eq/include -I../../../multimedia/inc/audio/process/drc/include -I../../../multimedia/inc/audio/process/iir/include -I../../../multimedia/inc/audio/process/adj_mc/inc -I../../../multimedia/inc/audio/process/resample/include -I../../../multimedia/inc/audio/process/integer_resampling/include -I../../../multimedia/inc/audio/process/limiter/include -I../../../multimedia/inc/audio/process/audio_down_mixer -I../../../multimedia/inc/audio/process/sbcplc/include -I../../../multimedia/inc/audio/process/reverberator/include -I../../../multimedia/inc/audio/process/adp/include -I../../../multimedia/inc/audio/process/reverb/include -I../../../multimedia/inc/audio/process/floatlimiter/include -I../../../multimedia/inc/audio/process/dynamic_eq/include -I../../../multimedia/inc/audio/process/dynamic_boost/include -I../../../multimedia/inc/audio/process/common/include -I../../../multimedia/inc/audio/process/resample/coef/include -I../../../multimedia/inc/audio/process/bes_fir_filter/inc -I../../../multimedia/inc/audio/process/audio_down_mixer -I../../../multimedia/inc/audio/process/fir2iir/include -I../../../multimedia/inc/audio/process/adaptive_volume/inc -I../../../multimedia/inc/audio/process/virtual_surround_process/include -I../../../multimedia/inc/fm/inc -I../../../multimedia/inc/speech/inc -DBT_DEV_NAME=prod_test/ota_copy.I0395-NB.derek -std=gnu99 -Werror=implicit-int -Werror-implicit-function-declaration -c -o config/prod_test/ota_copy/tgt_hardware.o ../../../config/prod_test/ota_copy/tgt_hardware.c

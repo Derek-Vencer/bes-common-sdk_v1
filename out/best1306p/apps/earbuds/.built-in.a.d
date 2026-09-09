@@ -1,0 +1,2 @@
+
+cmd_apps/earbuds/built-in.a := ( /usr/bin/printf 'create apps/earbuds/built-in.a\n addmod apps/earbuds/conn/app_ibrt_customif_cmd.o,apps/earbuds/conn/app_ibrt_customif_ui.o,apps/earbuds/conn/app_tws_ibrt_ui_test.o,apps/earbuds/app_ibrt/src/app_fpga_test_proxy.o,apps/earbuds/app_ibrt/src/app_ibrt_auto_test.o,apps/earbuds/app_ibrt/src/app_ibrt_auto_test_cmd_handle.o,apps/earbuds/app_ibrt/src/app_ibrt_ble_adv.o,apps/earbuds/app_ibrt/src/app_ibrt_keyboard.o,apps/earbuds/app_ibrt/src/app_ibrt_search_pair_ui.o\n save\nend' | arm-none-eabi-ar -M )

@@ -1,0 +1,2 @@
+
+cmd_apps/app_test/audio_test/built-in.a := ( /usr/bin/printf 'create apps/app_test/audio_test/built-in.a\n addmod apps/app_test/audio_test/audio_kws_test.o,apps/app_test/audio_test/audio_test_app_mcpp.o,apps/app_test/audio_test/audio_test_cmd.o,apps/app_test/audio_test/audio_test_hifi.o,apps/app_test/audio_test/audio_test_stream.o,apps/app_test/audio_test/audio_vad_test.o\n save\nend' | arm-none-eabi-ar -M )

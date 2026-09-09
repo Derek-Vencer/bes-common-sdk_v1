@@ -1,0 +1,2 @@
+
+cmd_apps/audioplayers/audio_trigger/version1/built-in.a := ( /usr/bin/printf 'create apps/audioplayers/audio_trigger/version1/built-in.a\n addmod apps/audioplayers/audio_trigger/version1/audio_trigger_a2dp.o,apps/audioplayers/audio_trigger/version1/audio_trigger_checker.o,apps/audioplayers/audio_trigger/version1/audio_trigger_common.o,apps/audioplayers/audio_trigger/version1/audio_trigger_ibrt.o\n save\nend' | arm-none-eabi-ar -M )

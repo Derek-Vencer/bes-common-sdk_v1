@@ -1,0 +1,2 @@
+
+cmd_platform/hal/best1306p/built-in.a := ( /usr/bin/printf 'create platform/hal/best1306p/built-in.a\n addmod platform/hal/best1306p/hal_analogif_best1306p.o,platform/hal/best1306p/hal_cmu_best1306p.o,platform/hal/best1306p/hal_codec_best1306p.o,platform/hal/best1306p/hal_iomux_best1306p.o,platform/hal/best1306p/hal_ipc_notify_api.o,platform/hal/best1306p/hal_psc_best1306p.o,platform/hal/best1306p/hal_sec_best1306p.o\n save\nend' | arm-none-eabi-ar -M )

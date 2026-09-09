@@ -1,0 +1,2 @@
+
+cmd_services/audio_bt/built-in.a := ( /usr/bin/printf 'create services/audio_bt/built-in.a\n addmod services/audio_bt/bt_xtal_sync.o,services/audio_bt/app_bt_media_manager.o,services/audio_bt/app_bt_stream.o,services/audio_bt/app_bt_stream_pcm_player.o,services/audio_bt/app_media_player.o,services/audio_bt/app_noise_estimation.o,services/audio_bt/app_ring_merge.o,services/audio_bt/audio_prompt_sbc.o\n save\nend' | arm-none-eabi-ar -M )

@@ -1,0 +1,2 @@
+
+cmd_tests/programmer/built-in.a := ( /usr/bin/printf 'create tests/programmer/built-in.a\n addmod \n addlib tests/programmer/libprogrammer_usb.a\n addlib tests/programmer/../../utils/hexdump/built-in.a\n addlib tests/programmer/../../utils/hwtimer_list/built-in.a\n addlib tests/programmer/../../utils/crc/built-in.a\n addlib tests/programmer/../../platform/drivers/norflash/built-in.a\n addlib tests/programmer/../../platform/drivers/ana/built-in.a\n addlib tests/programmer/../../platform/drivers/usb/usb_dev/built-in.a\nsave\nend' | arm-none-eabi-ar -M )

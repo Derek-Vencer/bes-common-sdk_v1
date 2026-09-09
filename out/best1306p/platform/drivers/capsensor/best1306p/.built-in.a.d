@@ -1,0 +1,2 @@
+
+cmd_services/capsensor/../../platform/drivers/capsensor/best1306p/built-in.a := ( /usr/bin/printf 'create services/capsensor/../../platform/drivers/capsensor/best1306p/built-in.a\n addmod services/capsensor/../../platform/drivers/capsensor/best1306p/capsensor_driver_best1306p.o,services/capsensor/../../platform/drivers/capsensor/best1306p/capsensor_spi_best1306p.o\n save\nend' | arm-none-eabi-ar -M )

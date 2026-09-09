@@ -1,0 +1,2 @@
+
+cmd_tests/programmer_ext/ota_copy/libprogrammer_ext_compressed.a := ( [ -d tests/programmer_ext/ota_copy/ ] || mkdir -p tests/programmer_ext/ota_copy/ ) && ( /usr/bin/printf 'create tests/programmer_ext/ota_copy/libprogrammer_ext_compressed.a\n addmod tests/programmer_ext/ota_copy/ota_copy.o\n save\nend' | arm-none-eabi-ar -M )

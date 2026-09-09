@@ -1,0 +1,2 @@
+
+cmd_utils/rom_utils/best1306p_librom_utils_ble_gfps_anc.a := ( [ -d utils/rom_utils/ ] || mkdir -p utils/rom_utils/ ) && ( /usr/bin/printf 'create utils/rom_utils/best1306p_librom_utils_ble_gfps_anc.a\n addmod utils/rom_utils/best1306p/rom_utils_init.o,utils/rom_utils/best1306p/rom_utils.o,utils/rom_utils/best1306p/rom_utils_speech_v1.o,utils/rom_utils/best1306p/rom_utils_speech_v2.o,utils/rom_utils/best1306p/rom_utils_speech_v3.o,utils/rom_utils/best1306p/rom_utils_v1.o\n save\nend' | arm-none-eabi-ar -M )

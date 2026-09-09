@@ -1,0 +1,2 @@
+
+cmd_nn/beco/Source/beco_nn/RNNFunctions/built-in.a := ( /usr/bin/printf 'create nn/beco/Source/beco_nn/RNNFunctions/built-in.a\n addmod nn/beco/Source/beco_nn/RNNFunctions/beco_bi_gru_s16.o,nn/beco/Source/beco_nn/RNNFunctions/beco_bi_lstm_s16.o,nn/beco/Source/beco_nn/RNNFunctions/beco_gru_s16_pc.o,nn/beco/Source/beco_nn/RNNFunctions/beco_gru_s16_pt.o,nn/beco/Source/beco_nn/RNNFunctions/beco_lstm_s16_pc.o,nn/beco/Source/beco_nn/RNNFunctions/beco_lstm_s16_pt.o,nn/beco/Source/beco_nn/RNNFunctions/beco_rnn_utils.o\n save\nend' | arm-none-eabi-ar -M )

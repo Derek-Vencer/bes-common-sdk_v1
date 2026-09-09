@@ -1,0 +1,2 @@
+
+cmd_multimedia/built-in.a := ( /usr/bin/printf 'create multimedia/built-in.a\n addmod \n addlib multimedia/best1306p_libmultimedia_romaac_cp_ble_gfps_anc.a\n addlib multimedia/inc/audio/process/anc/cfg/built-in.a\n addlib multimedia/inc/audio/process/filters/cfg/built-in.a\n addlib multimedia/inc/audio/process/resample/coef/built-in.a\n addlib multimedia/speech/armcc/built-in.a\nsave\nend' | arm-none-eabi-ar -M )

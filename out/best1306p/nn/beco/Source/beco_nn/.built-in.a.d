@@ -1,0 +1,2 @@
+
+cmd_nn/beco/Source/beco_nn/built-in.a := ( /usr/bin/printf 'create nn/beco/Source/beco_nn/built-in.a\n addmod \n addlib nn/beco/Source/beco_nn/ConvolutionFunctions/built-in.a\n addlib nn/beco/Source/beco_nn/FullyConnectedFunctions/built-in.a\n addlib nn/beco/Source/beco_nn/NNSupportFunctions/built-in.a\n addlib nn/beco/Source/beco_nn/RNNFunctions/built-in.a\n addlib nn/beco/Source/beco_nn/PoolingFunctions/built-in.a\nsave\nend' | arm-none-eabi-ar -M )

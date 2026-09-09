@@ -1,0 +1,2 @@
+
+cmd_services/../bthost/stack/built-in.a := ( /usr/bin/printf 'create services/../bthost/stack/built-in.a\n addmod \n addlib services/../bthost/stack/transport/built-in.a\n addlib services/../bthost/stack/common/built-in.a\n addlib services/../bthost/stack/bt_if/built-in.a\n addlib services/../bthost/stack/bt_profiles/built-in.a\n addlib services/../bthost/stack/ble_stack_new/built-in.a\nsave\nend' | arm-none-eabi-ar -M )
